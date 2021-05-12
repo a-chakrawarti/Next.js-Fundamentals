@@ -4,7 +4,7 @@ const Tagline = () => {
   const selectedColor = "orange";
   return (
     <div>
-      <p className="heading">Nothing to see here...</p>
+      <p className="heading smallcase">Nothing to see here...</p>
 
       {/* Applies the jsx globally, initially was component level */}
       <style jsx global>
