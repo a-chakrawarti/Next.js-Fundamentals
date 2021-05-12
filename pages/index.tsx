@@ -24,8 +24,13 @@ const Tagline = () => {
           <li className={styles.nav_links}>Home</li>
           <li className={styles.nav_links}>About</li>
           <li className={styles.nav_links}>
-            <Link href="/login">
+            <Link href="/profile">
               <a>Login</a>
+            </Link>
+          </li>
+          <li className={styles.nav_links}>
+            <Link href="/profile/logout">
+              <a>Logout`</a>
             </Link>
           </li>
         </ul>

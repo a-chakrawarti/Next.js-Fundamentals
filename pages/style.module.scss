@@ -14,6 +14,15 @@
   margin: 1rem;
   transition: font-weight 500ms ease;
 
+  a {
+    text-decoration: none;
+
+    &:visited {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
   &:hover {
     font-weight: 900;
   }
