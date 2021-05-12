@@ -1,6 +1,7 @@
 // Styled-JSX: Component level style
-
 import styles from "./style.module.scss";
+
+import Link from "next/link";
 
 const Tagline = () => {
   const selectedColor = "orange";
@@ -22,7 +23,11 @@ const Tagline = () => {
         <ul>
           <li className={styles.nav_links}>Home</li>
           <li className={styles.nav_links}>About</li>
-          <li className={styles.nav_links}>Services</li>
+          <li className={styles.nav_links}>
+            <Link href="/login">
+              <a>Login</a>
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
