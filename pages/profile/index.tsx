@@ -13,7 +13,7 @@ const Login = () => {
         headers: {
           "Content-type": "application/json",
         },
-        body: JSON.stringify({}),
+        body: JSON.stringify({ username, password }),
       })
     ).json();
 
@@ -50,7 +50,9 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onClick={handleLogin}>Login</button>
+        <button className="smallcase" onClick={handleLogin}>
+          Login
+        </button>
       </form>
     </div>
   );
